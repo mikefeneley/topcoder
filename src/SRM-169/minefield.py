@@ -47,18 +47,3 @@ class MineField:
 			strings.append(string)
 		final_board = (this)
 		return final_board
-
-		"""
-		for first in range(0, 9):
-			for second in range (0, 9):
-				print(board[first][second], end="")
-			print("\n")
-		"""
-
-
-
-
-if __name__ == '__main__':
-	this = MineField()
-	this.getMineField("(0,0)(1,0)(2,0)(3,0)(4,0)")
-#	this.getMineField("(3,2)(3,3)(3,4)(4,2)(4,4)(5,2)(5,3)(5,4)(7,4)(6,7)")
