@@ -18,20 +18,20 @@ class NumberGuesser:
 				digits = '0' + str(digits)
 			else:
 				digits = str(digits)
-		  first = [] 
-      second =[] 
+		first = [] 
+      		second =[] 
         
-        for i in range(0, 4):
-            for j in range(0, 4):
-                for k in range(0, 4):
-                    for l in range(0, 4):
-                        if i != j and i != k and i != l and j != k and j != l and k != l: 
-                            first.append(int(digits[i] + digits[j] + digits[k] + digits[l]))
-                            second.append(int(digits[i] + digits[j] + digits[k] + digits[l]))
-            
-        for comb1 in first:
-            for comb2 in second:
-                val = abs(comb1 - comb2)
-                if(val == num):
-                    return True
+		for i in range(0, 4):
+		    for j in range(0, 4):
+			for k in range(0, 4):
+			    for l in range(0, 4):
+				if i != j and i != k and i != l and j != k and j != l and k != l: 
+				    first.append(int(digits[i] + digits[j] + digits[k] + digits[l]))
+				    second.append(int(digits[i] + digits[j] + digits[k] + digits[l]))
+
+		for comb1 in first:
+		    for comb2 in second:
+			val = abs(comb1 - comb2)
+			if(val == num):
+			    return True
 		return False
