@@ -7,8 +7,3 @@ class PrefixCode:
                 if word == prefix:
                     return True
         return False
-
-this = PrefixCode()
-
-val = this.isOne({"10001", "011", "100", "001", "10"})
-print(val)
